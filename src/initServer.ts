@@ -1,9 +1,7 @@
-import express from 'express';
-import { createHook } from 'node:async_hooks';
+import express from "express";
+import { createHook } from "node:async_hooks";
 
 async function initServer() {
-  await attachMe();
-
   const app = express();
   const PORT = process.env.PORT || 8000;
 
@@ -13,10 +11,10 @@ async function initServer() {
 
   app.use(express.json());
 
-  app.get('/', async (req, res) => {
-    await attachMe();
+  app.get("/", async (req, res) => {
+    await stepIntoMe();
 
-    console.log('got here');
+    console.log("got here");
 
     res.json({ success: true });
   });
@@ -28,10 +26,10 @@ async function initServer() {
 
 initServer();
 
-async function attachMe() {
-  console.log('Attaching...');
+async function stepIntoMe() {
+  console.log("Attaching...");
 
   await new Promise((resolve) => setTimeout(resolve, 1000));
 
-  console.log('Attached!');
+  console.log("Attached!");
 }

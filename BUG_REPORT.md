@@ -1,16 +1,3 @@
-### Acknowledgements
-
-- [x] I read the documentation and searched existing issues to avoid duplicates
-- [x] I understand this is a **bug tracker** and anything other than a proven bug will be closed
-- [x] I understand this is a free project and relies on community contributions
-- [x] I read and understood the [Contribution guide](https://github.com/privatenumber/tsx/blob/master/CONTRIBUTING.md)
-
-### Minimal reproduction URL
-
-https://github.com/talkohavy/tsx-bug-report.git
-
-### Problem & expected behavior (under 200 words)
-
 # Debugger Step-Into (F11) Not Working with `node:async_hooks` in tsx
 
 ## 1. Summary
@@ -74,11 +61,3 @@ The Step Into functionality works correctly.
 ## 8. Impact
 
 This bug significantly impacts the debugging experience for developers using tsx with any code that utilizes Node.js async_hooks, making it difficult to debug async function calls in such scenarios.
-
-### Bugs are expected to be fixed by those affected by it
-
-- [ ] I'm interested in working on this issue
-
-### Compensating engineering work will speed up resolution and support the project
-
-- [ ] I'm willing to offer $10 for financial support
